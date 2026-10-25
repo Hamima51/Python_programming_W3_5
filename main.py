@@ -19,5 +19,8 @@ elif choice == 2:
     celsius = (fahrenheit - 32) / 1.8
     print(f"{fahrenheit:.1f} °F equals to {celsius:.1f} °C")
 
+elif choice == 0:
+    pass
+
 print()
 print("Program ending.")
