@@ -1,5 +1,6 @@
 
-print("Program starting.\n")
+print("Program starting.")
+print()
 
 print("Options:")
 print("1 - Celsius to Fahrenheit")
@@ -10,18 +11,13 @@ choice = int(input("Your choice: "))
 
 if choice == 1:
     celsius = float(input("Insert the amount of Celsius: "))
-    fahrenheit = (celsius * 9 / 5) + 32
+    fahrenheit = celsius * 1.8 + 32
     print(f"{celsius:.1f} °C equals to {fahrenheit:.1f} °F")
 
 elif choice == 2:
     fahrenheit = float(input("Insert the amount of Fahrenheit: "))
-    celsius = (fahrenheit - 32) * 5 / 9
+    celsius = (fahrenheit - 32) / 1.8
     print(f"{fahrenheit:.1f} °F equals to {celsius:.1f} °C")
 
-elif choice == 0:
-    pass
-
-else:
-    print("Invalid choice!")
-
-print("\nProgram ending.")
+print()
+print("Program ending.")
