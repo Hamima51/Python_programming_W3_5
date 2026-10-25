@@ -14,5 +14,9 @@ elif choice == "2":
     fahrenheit = float(input("Insert the amount of Fahrenheit: "))
     celsius = (fahrenheit - 32) / 1.8
     print(f"{fahrenheit:.1f} °F equals to {celsius:.1f} °C")
+elif choice == "0":
+    print("Exiting...")
+else:
+    print("Unknown option.")
 
 print("\nProgram ending.")
